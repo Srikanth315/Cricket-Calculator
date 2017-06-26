@@ -1,0 +1,19 @@
+STREET CRICKET/CRICKET CALCULATOR
+
+
+
+BATSMAN:
+RUNS:
+AVG:
+S.RATE:
+
+
+
+
+BOWLER:
+ECON:
+AVG:
+
+
+
+resemblance  based on runs/wick

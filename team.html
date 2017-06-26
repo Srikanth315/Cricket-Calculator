@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/icon1.jpg">
+<style>
+#p01,#p02,#p03,#p04{
+width:14%;
+padding:0px 0px 0px 0px;
+margin:10px 10px 0px 10px;
+}
+.na,.rr{
+border:6px solid #67BCDB;
+width:500px;
+height:180px;}
+.na2,.rr2{
+padding:15px 5px 5px 150px;}
+.rr{
+margin:0px 0px 0px 320px;}
+.na{
+margin:0px 0px 0px 0px;
+padding:10p 5px 0px 5px;}
+
+#k1{
+font-size:30px;
+	width:550px;
+	height:50px;
+	margin:60px 0px 0px 430px;}
+	button{
+margin:40px 0px 0px 80px;}
+@keyframes example{
+0% { background-image:url("E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/1a.jpg");
+background-size:cover;
+}
+25% {background-image:url("E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/1b.jpg");
+background-size:cover;
+}
+50% {background-image:url("E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/1c.jpg");
+background-size:cover;
+}
+75% {background-image:url("E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/1d.jpg");
+background-size:cover;
+}
+100% {background-image:url("E:/proo/PROGRAMMING/Google/Cricket Calculator/backgrounds/1e.jpg");
+background-size:cover;
+}}
+body{
+color:white;
+font-size:30px;
+animation-name:example;
+animation-duration:90s;
+animation-iteration-count: infinite;
+}
+#bu{
+margin:10px 10px 20px 10px;
+padding:10px 5px 5px 5px;
+background-color: #0087E2;
+border:1px solid #0087E2;
+color:white;
+}
+
+.avb{
+margin:0px 0px 25px 0px;
+}
+</style>
+</head>
+<body>
+<script>
+
+function avg()
+{
+
+var a=document.getElementById("p01").value;
+var b=document.getElementById("p02").value;
+var c=document.getElementById("p03").value;
+var d=document.getElementById("p04").value;
+var e=document.getElementById("k2").value;
+
+
+
+var z;
+z=a/e+b/e+c/e+d/e;
+document.getElementById("k1").value=z;
+}
+function sr(){
+var p=document.getElementById("r1").value;
+var q=document.getElementById("r2").value;
+var r=(p/q);
+r=r*100;
+document.getElementById("k1").value=r;
+
+}
+function eco()
+{
+var p=document.getElementById("e1").value;
+var q=document.getElementById("e2").value;
+var m=p*10;
+m=m%10;
+var f=m%10;
+var r=(q/p);
+document.getElementById("k1").value=r;
+
+}
+
+</script>
+<input id="k1" type="number" readonly><br /> <br /><br />
+<table>
+<tr><td>
+<div class="na">
+<div class="na2">
+Total no of mathes you played:<br />
+<input id="k2" type="number" ><br />
+
+please enter your scores:<br />
+<input id="p01" type="number">
+<input id="p02" type="number" >
+<input id="p03" type="number">
+<input id="p04" type="number" ><br />
+<button id= "bu" onclick="avg()">AVG</button></div></div></td>
+<td>
+<div class="rr">
+<div class="rr2">
+Your score :<br />
+<input id="r1" type="number">
+<br />
+No of balls you faced:<br />
+<input id="r2" type="number"><br />
+<button id="bu" onclick="sr()">Strike Rate</button></div></div></td></tr>
+<tr>
+<td>
+<div class="na">
+<div class="na2">
+no of overs you bowled:<br />
+<input id="e1" type="number" ><br />
+no of runs you conceded:<br />
+<input id="e2" type="number"><br />
+<button id="bu" onclick="eco()">economy</button></div></div></td>
+</body>
+</html>
